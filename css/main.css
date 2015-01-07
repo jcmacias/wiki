@@ -1,0 +1,34 @@
+/*Con mi estilo*/
+.navbar-default {
+    background-color: #3b4348;
+    border-color: #3b4348;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #6f7579
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #fff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #192126;
+    color: #fff;
+}
+.dropdown-menu{
+	background-color: #3b4348; 
+	
+}
+.dropdown-menu > li > a {
+   color: #fff;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #192126;
+    color: #fff;
+    text-decoration: none;
+}
+.dropdown-menu .divider {
+    background-color: #192126;
+}
