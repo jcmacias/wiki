@@ -32,3 +32,6 @@
 .dropdown-menu .divider {
     background-color: #192126;
 }
+.list-group-item .active{
+    background-color: #3b4348 !important;
+}

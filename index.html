@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel='stylesheet' type="text/css" href="css/bootstrap3.css"/>
+    <link href="css/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel='stylesheet' type="text/css" href="css/main.css"/>
     <link rel='stylesheet' type="text/css" href="css/side-menu.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -22,7 +23,10 @@
         </div>
         <div id="bs-example-navbar-collapse-2" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Link </a>
+
+
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -48,15 +52,14 @@
     
 </nav>
 </header>
+
 <div class="container">
     <div class="side-menu col-md-2">
  
     <div class="list-group">
         <span href="#" class="list-group-item">
            Categorias
-            <span class="pull-right" id="slide-submenu">
-                <i class="fa fa-times"></i>
-            </span>
+            
         </span>
         <a href="#" class="list-group-item">
             <i class="fa fa-comment-o"></i> Lorem ipsum
@@ -68,10 +71,10 @@
             <i class="fa fa-user"></i> Lorem ipsum
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-folder-open-o"></i> Lorem ipsum <span class="badge">14</span>
+            <i class="fa fa-folder-open-o"></i> Lorem ipsum 
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-bar-chart-o"></i> Lorem ipsumr <span class="badge">14</span>
+            <i class="fa fa-bar-chart-o"></i> Lorem ipsum
         </a>
         <a href="#" class="list-group-item">
             <i class="fa fa-envelope"></i> Lorem ipsum
@@ -79,46 +82,42 @@
     </div>    
     <div class="list-group">
         <span href="#" class="list-group-item">
-           Imprimir/exportar
-            <span class="pull-right" id="slide-submenu">
-                <i class="fa fa-times"></i>
-            </span>
+           <i class="fa fa-print"></i> Imprimir/exportar 
+            
         </span>
         <a href="#" class="list-group-item">
-            <i class="fa fa-comment-o"></i> Crear un libro
+            <i class="fa fa-book"></i> Crear un libro
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-search"></i> Descargar como PDF
+            <i class="fa fa-file-pdf-o"></i> Descargar como PDF
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-user"></i> Versión para imprimir
+            <i class="fa fa-file-word-o"></i> Versi&oacute;n para imprimir
         </a>
         
     </div> 
         <div class="list-group">
         <span href="#" class="list-group-item">
            Herramientas
-            <span class="pull-right" id="slide-submenu">
-                <i class="fa fa-times"></i>
-            </span>
+            
         </span>
         <a href="#" class="list-group-item">
-            <i class="fa fa-comment-o"></i> Lo que enlaza aquí
+            <i class="fa fa-external-link"></i> Lo que enlaza aqu&iacute;
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-search"></i> Cambios en enlazadas
+            <i class="fa fa-exchange"></i> Cambios en enlazadas
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-user"></i> Subir un archivo
+            <i class="fa fa-upload"></i> Subir un archivo
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-user"></i> Páginas especiales
+            <i class="fa fa-user"></i> P&aacute;ginas especiales
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-user"></i> Enlace permanente
+            <i class="fa fa-chain"></i> Enlace permanente
         </a>
         <a href="#" class="list-group-item">
-            <i class="fa fa-user"></i> Informaci&oacute;n de la p&aacute;gina
+            <i class="fa fa-info"></i> Informaci&oacute;n de la p&aacute;gina
         </a>
         <a href="#" class="list-group-item">
             <i class="fa fa-user"></i> Elemento de Wikidata
@@ -128,9 +127,27 @@
     
 </div>        
 <div class="col-md-10">
-   
-    <div class="row">
-    <h2>Ra&uacute;l Castro</h2>
+<div role="tabpanel ">
+   <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#articulo" aria-controls="articulo" role="tab" data-toggle="tab">
+    Art&iacute;culo</a></li>
+    <li role="presentation"><a href="#discusion" aria-controls="discusion" role="tab" data-toggle="tab">Discusi&oacute;n</a></li>
+     <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+             Acciones <span class="caret"></span>
+            </a>
+         <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Leer</a></li>
+            <li><a href="#">Editar</a></li>
+            <li><a href="#">Seccion Nueva</a></li>
+            <li><a>Ver Historial</a></li>
+        </ul>
+    </li>
+  </ul>
+   <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="articulo">
+        
+     <h2>Ra&uacute;l Castro</h2>
             <hr/>
         <div class="col-md-3">
             <img src="img/raul.jpeg" alt="Raul Castro" class="img-rounded img-responsive" /><br/>
@@ -151,10 +168,19 @@
             <p>Conoció al Che Guevara en Ciudad de México y le introdujo en el círculo revolucionario de Fidel. Raúl también contactó el agente del KGB Nikolai Leonov, a quien había conocido durante su viaje por las naciones del bloque del Este. Esta relación persistiría hasta que los hermanos Castro tomaran el poder en Cuba.</p>
             <p>Como combatiente del Ejército Rebelde, tomó parte en la campaña de Sierra Maestra. El 27 de febrero de 1958 fue nombrado comandante y se le asignó la misión de cruzar la antigua provincia de Oriente, liderando una columna de guerrilleros, para abrir el Segundo Frente Oriental "Frank País" (en honor a un líder de la clandestinidad asesinado por las fuerzas batistianas en la ciudad de Santiago de Cuba) hacia el noreste. En ese frente, Raúl organizó y estructuró un verdadero gobierno en los territorios liberados, creando incluso la Fuerza Aérea Rebelde, y las primeras instituciones de inteligencia y policía de los revolucionarios, además de departamentos de sanidad, educación, etcétera.</p>
         </div>
-</div>
-
-       
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="discusion">
+      <h2>Discusi&oacute;n:Ra&uacute;l Castro</h2>
+      <hr/>
+      Todo lo de la discusion......
+    </div>
     
+  </div>
+  </div>
+  
+</ul>
+    
+  
 </div> 
 </div>
 </div>
